@@ -95,4 +95,5 @@ POST /wazuh-alerts-4.x-2026.03.27/_doc
 ![Terminal Output showing alert detection and AI analysis](images/terminal.png)
 
 ### Automated Jira Ticket
-![Jira Ticket with AI-provided risk assessment and remediation](images/jira.png)
+![AI-provided Jira Ticket](images/jira.png)
+![Jira Ticket with AI-provided risk assessment and remediation](images/jiraRemediation.png)
