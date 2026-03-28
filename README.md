@@ -89,3 +89,10 @@ POST /wazuh-alerts-4.x-2026.03.27/_doc
 1.	Terminal: Script detects the alert and prints the Llama 3 analysis.
 
 2.	Jira: A new ticket is automatically created with the analysis and remediation steps attached.
+## 📸 Screenshots
+
+### AI Analysis in Terminal
+![Terminal Output showing alert detection and AI analysis](images/terminal.png)
+
+### Automated Jira Ticket
+![Jira Ticket with AI-provided risk assessment and remediation](images/jira.png)
