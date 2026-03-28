@@ -50,7 +50,7 @@ cd AI-The-Autonomous-SOC
     JIRA_SERVER=[https://your-domain.atlassian.net](https://your-domain.atlassian.net)
     JIRA_EMAIL=your-email@example.com
     JIRA_API_TOKEN=your_jira_api_token
-    JIRA_PROJECT_KEY=KAN
+    JIRA_PROJECT_KEY=PROJ
     ```
 
 ## 🏃 How to Run
