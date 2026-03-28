@@ -32,8 +32,8 @@ Before running the watchdog, ensure you have the following installed:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/kavanaas-cybersecurity/AI-The-Autonomous-SOC.git](https://github.com/kavanaas-cybersecurity/AI-The-Autonomous-SOC.git)
-    cd AI-The-Autonomous-SOC
+    git clone https://github.com/kavanaas-cybersecurity/AI-The-Autonomous-SOC.git
+cd AI-The-Autonomous-SOC
     ```
 
 2.  **Install Dependencies:**
