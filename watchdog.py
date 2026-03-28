@@ -77,8 +77,21 @@ def run_autonomous_soc():
                         
                         print(f">> Analyzing Level {level}: {title}")
                         
-                        prompt = f"Explain the risk of '{title}' in one sentence and suggest a fix: '{remediation}'"
-                        ai_res = ollama.chat(model='llama3', messages=[{'role': 'user', 'content': prompt}])
+                        # 1. Define the rules in the System role
+                        system_prompt = (
+                            "You are a strict, highly skilled SOC Analyst. "
+                            "Your job is to review security alerts. "
+                            "Rules: Explain the risk in exactly one sentence. Suggest a fix based strictly on standard frameworks (like CIS or NIST). NEVER make up or hallucinate commands."
+                        )
+                        
+                        # 2. Pass the specific alert data in the User role
+                        user_prompt = f"Alert Title: '{title}'\nSuggested Remediation: '{remediation}'"
+                        
+                        # 3. Send both to Ollama
+                        ai_res = ollama.chat(model='llama3', messages=[
+                            {'role': 'system', 'content': system_prompt},
+                            {'role': 'user', 'content': user_prompt}
+                        ])
                         ai_analysis = ai_res['message']['content']
                         
                         print(f"🤖 AI Response: {ai_analysis[:100]}...")
